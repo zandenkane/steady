@@ -2,9 +2,9 @@
 
 # steady
 
-My dad has essential tremor. Watching him try to click a tiny "X" button or hit a menu item is painful. His hand shakes, the cursor jitters, and every click is a coin flip. I built this so he could use a computer without fighting it.
+if your mouse cursor has a mind of its own, this is for you.
 
-steady is a daemon that sits between the mouse and the OS. It intercepts raw pointer events, runs them through a chain of filters, and reinjects the cleaned up position. The cursor moves where you meant it to go, not where the tremor took it.
+steady is a daemon that sits between the mouse and the OS. it intercepts raw pointer events, runs them through configurable filters (tremor smoothing, dwell clicking, pointer stabilization), and reinjects the cleaned up position. cursor goes where you meant it to go. works system-wide on Windows, Linux, and macOS.
 
 ## What the filters do
 

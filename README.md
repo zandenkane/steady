@@ -18,6 +18,29 @@ steady is a daemon that sits between the mouse and the OS. it intercepts raw poi
 
 Each filter is independent. Turn on whichever ones help, leave the rest off.
 
+
+## how it works
+
+```mermaid
+graph TD
+    A[Raw mouse input] --> B[Tremor filter]
+    B --> C[Smoothing filter]
+    C --> D[Dwell click detector]
+    D --> E[Click zone expander]
+    E --> F[OS cursor position]
+
+    style A fill:#ff6b6b
+    style F fill:#51cf66
+```
+
+```
+$ steady --config steady.toml
+[steady] loaded config: tremor=0.7 smooth=0.5 dwell=800ms zone=1.5x
+[steady] backend: windows (RawInput)
+[steady] pipeline active. ctrl+c to stop.
+[steady] stats (last 60s): 12,847 events filtered, 94% jitter removed
+```
+
 ## Install
 
 ```

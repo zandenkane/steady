@@ -1,6 +1,12 @@
-![CI](https://github.com/zandenkane/steady/actions/workflows/ci.yml/badge.svg)
+<p align="center">
+  <img src="assets/banner.png" alt="steady" width="100%">
+</p>
 
-# steady
+<p align="center">
+  <a href="https://github.com/zandenkane/steady/actions/workflows/ci.yml"><img src="https://github.com/zandenkane/steady/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <img src="https://img.shields.io/badge/rust-DEA584?style=flat&logo=rust&logoColor=white" alt="rust">
+  <img src="https://img.shields.io/badge/license-MIT-green" alt="MIT License">
+</p>
 
 if your mouse cursor has a mind of its own, this is for you.
 

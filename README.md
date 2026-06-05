@@ -25,6 +25,12 @@ steady is a daemon that sits between the mouse and the OS. it intercepts raw poi
 Each filter is independent. Turn on whichever ones help, leave the rest off.
 
 
+
+<p align="center">
+  <img src="assets/before_after.png" alt="cursor path: without vs with steady" width="90%">
+</p>
+
+
 ## how it works
 
 ```mermaid
